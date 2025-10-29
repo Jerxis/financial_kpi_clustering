@@ -156,11 +156,7 @@ if exclude_outliers:
                 use_container_width=True,
                 hide_index=True
             )
-
-
-
-
-
+            
 # ========= SCALE + PCA ==========
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(filtered_df[KPI_FEATURES])
@@ -301,3 +297,4 @@ for cluster in sorted(filtered_df["Cluster"].unique()):
     display_table = display_table[["KPI", "UoM", "What is better?", "Bottom Quartile", "Median", "Top Quartile"]]
 
     st.dataframe(display_table.style.format(precision=2), use_container_width=True)
+
