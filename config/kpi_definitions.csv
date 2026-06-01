@@ -1,0 +1,9 @@
+﻿ID,KPI,Category,UoM,What is better?,Formula,Required Fields,Include in Clustering
+1,Gross Margin,Profitability,%,Bigger better,( `Total Revenue` - `Cost Of Revenue` ) / `Total Revenue`,Total Revenue; Cost Of Revenue,Yes
+2,Operating Margin,Profitability,%,Bigger better,`Operating Income` / `Total Revenue`,Operating Income; Total Revenue,Yes
+3,Net Margin,Profitability,%,Bigger better,`Net Income` / `Total Revenue`,Net Income; Total Revenue,Yes
+4,EBITDA Margin,Profitability,%,Bigger better,`EBITDA` / `Total Revenue`,EBITDA; Total Revenue,Yes
+5,Return on Assets,Profitability,%,Bigger better,`Net Income` / `Total Assets`,Net Income; Total Assets,Yes
+6,Return on Equity,Profitability,%,Bigger better,`Net Income` / `Stockholders Equity`,Net Income; Stockholders Equity,Yes
+7,Asset Turnover,Profitability,%,Bigger better,`Total Revenue` / `Total Assets`,Total Revenue; Total Assets,Yes
+8,Revenue per Employee,Profitability,USD,Bigger better,`Total Revenue` / `Employees`,Total Revenue; Employees,Yes
