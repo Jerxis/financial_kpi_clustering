@@ -75,18 +75,59 @@ def validate_kpi_definitions(
     return pd.DataFrame(validation_records)
 
 
+def make_safe_column_name(column_name: str) -> str:
+    """
+    Convert a column name into a safe variable name for formula evaluation.
+    """
+
+    return (
+        column_name
+        .replace(" ", "_")
+        .replace("-", "_")
+        .replace("/", "_")
+        .replace("&", "and")
+        .replace("(", "")
+        .replace(")", "")
+    )
+
+
+def make_safe_formula(formula: str, column_mapping: dict) -> str:
+    """
+    Replace original column names in a formula with safe column names.
+    """
+
+    safe_formula = formula
+
+    for original_column, safe_column in column_mapping.items():
+        safe_formula = safe_formula.replace(f"`{original_column}`", safe_column)
+
+    return safe_formula
+
+
 def calculate_single_kpi(
     data: pd.DataFrame,
     kpi_name: str,
     formula: str
 ) -> pd.Series:
     """
-    Calculate a single KPI using a restricted evaluation environment.
+    Calculate a single KPI using safe column names.
     """
 
+    column_mapping = {
+        column: make_safe_column_name(column)
+        for column in data.columns
+    }
+
+    safe_data = data.rename(columns=column_mapping)
+
+    safe_formula = make_safe_formula(
+        formula=formula,
+        column_mapping=column_mapping
+    )
+
     local_dict = {
-        col: data[col]
-        for col in data.columns
+        col: safe_data[col]
+        for col in safe_data.columns
     }
 
     local_dict["np"] = np
@@ -94,7 +135,7 @@ def calculate_single_kpi(
 
     try:
         result = pd.eval(
-            formula,
+            safe_formula,
             local_dict=local_dict,
             engine="python"
         )
@@ -105,9 +146,10 @@ def calculate_single_kpi(
 
     except Exception as error:
         raise ValueError(
-            f"Failed to calculate KPI '{kpi_name}'. Error: {error}"
+            f"Failed to calculate KPI '{kpi_name}'. "
+            f"Formula used: {safe_formula}. "
+            f"Error: {error}"
         )
-
 
 def calculate_kpis(
     data: pd.DataFrame,
