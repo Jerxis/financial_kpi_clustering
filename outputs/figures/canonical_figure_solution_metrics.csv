@@ -1,0 +1,31 @@
+Scenario ID,Scenario Name,Method,Configuration,Common-Space Silhouette Score,Evaluation Coverage
+technology_revenue_25m,Technology companies with revenue >= $25M,Agglomerative,K=2,0.44506115467793256,1.0
+technology_revenue_25m,Technology companies with revenue >= $25M,K-Means,K=2,0.3906215619200194,1.0
+technology_revenue_25m,Technology companies with revenue >= $25M,Gaussian Mixture,K=2,0.2523357281439438,1.0
+technology_revenue_25m,Technology companies with revenue >= $25M,HDBSCAN,"mcs=10, ms=5",0.5817187312482276,0.807495741056218
+technology_revenue_25m,Technology companies with revenue >= $25M,Autoencoder + K-Means,"K=4, median seed=456",0.20740410412446494,1.0
+technology_revenue_25m,Technology companies with revenue >= $25M,DEC,"K=4, median seed=456",0.14516874107763908,1.0
+healthcare_revenue_50m,Healthcare companies with revenue >= $50M,Agglomerative,K=2,0.484145290449611,1.0
+healthcare_revenue_50m,Healthcare companies with revenue >= $50M,K-Means,K=2,0.47250100499989534,1.0
+healthcare_revenue_50m,Healthcare companies with revenue >= $50M,Gaussian Mixture,K=2,0.2787236743227077,1.0
+healthcare_revenue_50m,Healthcare companies with revenue >= $50M,HDBSCAN,"mcs=10, ms=15",0.6377840685987847,0.7454954954954955
+healthcare_revenue_50m,Healthcare companies with revenue >= $50M,Autoencoder + K-Means,"K=4, median seed=456",0.23534942475270387,1.0
+healthcare_revenue_50m,Healthcare companies with revenue >= $50M,DEC,"K=4, median seed=42",0.20683778957373997,1.0
+industrials_revenue_20m,Industrials companies with revenue >= $20M,K-Means,K=3,0.5027037840163403,1.0
+industrials_revenue_20m,Industrials companies with revenue >= $20M,Agglomerative,K=3,0.49100126998958327,1.0
+industrials_revenue_20m,Industrials companies with revenue >= $20M,Gaussian Mixture,K=2,0.288963753349381,1.0
+industrials_revenue_20m,Industrials companies with revenue >= $20M,HDBSCAN,"mcs=15, ms=5",0.6254152381897049,0.8654867256637168
+industrials_revenue_20m,Industrials companies with revenue >= $20M,Autoencoder + K-Means,"K=4, median seed=2026",0.3089708979543929,1.0
+industrials_revenue_20m,Industrials companies with revenue >= $20M,DEC,"K=4, median seed=456",0.16630000065496237,1.0
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,K-Means,K=3,0.42797017190429887,1.0
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,Agglomerative,K=3,0.36783750095887086,1.0
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,Gaussian Mixture,K=2,0.23189510722820927,1.0
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,HDBSCAN,"mcs=15, ms=5",0.4839122362283647,0.8276595744680851
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,Autoencoder + K-Means,"K=4, median seed=42",0.22645182554886595,1.0
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,DEC,"K=4, median seed=42",0.1880209068686291,1.0
+non_financial_large_cap_revenue_1b,Non-financial companies with revenue >= $1B,Agglomerative,K=2,0.596074030176157,1.0
+non_financial_large_cap_revenue_1b,Non-financial companies with revenue >= $1B,K-Means,K=2,0.5759981888852561,1.0
+non_financial_large_cap_revenue_1b,Non-financial companies with revenue >= $1B,Gaussian Mixture,K=2,0.22079898709840845,1.0
+non_financial_large_cap_revenue_1b,Non-financial companies with revenue >= $1B,HDBSCAN,"mcs=10, ms=15",0.6371482901135445,0.9327680193821926
+non_financial_large_cap_revenue_1b,Non-financial companies with revenue >= $1B,Autoencoder + K-Means,"K=4, median seed=42",0.15734070240629272,1.0
+non_financial_large_cap_revenue_1b,Non-financial companies with revenue >= $1B,DEC,"K=4, median seed=42",0.0898424017625192,1.0
