@@ -1,4 +1,7 @@
 # Leveraging Clustering Algorithms to Improve Peer Benchmarking
+
+**NOTE: This README file is for the repository as a whole, not a guide for evaluators of the final dissertation project. For the README for evaluators, check the README.md attached on the submission package in the KLE platform**
+
 ## Overview
 
 Traditional business benchmarking relies heavily on manually selecting peer companies based on industry classifications and expert judgement. While this approach is widely used, it can introduce subjectivity and may fail to identify organisations with similar operational and financial characteristics.
