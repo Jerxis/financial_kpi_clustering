@@ -1,0 +1,65 @@
+KPI,Reason,Sector,Affected_Companies,Sector_Companies,Affected_Company_Share
+Asset Turnover,source_field_missing,Financial Services,1,707,0.0014144271570014145
+Asset Turnover,source_field_missing,Industrials,2,660,0.0030303030303030303
+Asset Turnover,source_field_missing,Technology,2,751,0.002663115845539281
+Cash Conversion Ratio,immaterial_positive_denominator,Basic Materials,2,219,0.0091324200913242
+Cash Conversion Ratio,immaterial_positive_denominator,Communication Services,6,253,0.023715415019762844
+Cash Conversion Ratio,immaterial_positive_denominator,Consumer Cyclical,23,527,0.04364326375711575
+Cash Conversion Ratio,immaterial_positive_denominator,Consumer Defensive,13,230,0.05652173913043478
+Cash Conversion Ratio,immaterial_positive_denominator,Energy,10,206,0.04854368932038835
+Cash Conversion Ratio,immaterial_positive_denominator,Financial Services,8,707,0.011315417256011316
+Cash Conversion Ratio,immaterial_positive_denominator,Healthcare,15,740,0.02027027027027027
+Cash Conversion Ratio,immaterial_positive_denominator,Industrials,28,660,0.04242424242424243
+Cash Conversion Ratio,immaterial_positive_denominator,Real Estate,4,175,0.022857142857142857
+Cash Conversion Ratio,immaterial_positive_denominator,Technology,21,751,0.02796271637816245
+Cash Conversion Ratio,immaterial_positive_denominator,Utilities,1,98,0.01020408163265306
+Cash Conversion Ratio,non_positive_denominator,Basic Materials,91,219,0.4155251141552511
+Cash Conversion Ratio,non_positive_denominator,Communication Services,136,253,0.5375494071146245
+Cash Conversion Ratio,non_positive_denominator,Consumer Cyclical,217,527,0.4117647058823529
+Cash Conversion Ratio,non_positive_denominator,Consumer Defensive,91,230,0.39565217391304347
+Cash Conversion Ratio,non_positive_denominator,Energy,53,206,0.25728155339805825
+Cash Conversion Ratio,non_positive_denominator,Financial Services,122,707,0.17256011315417255
+Cash Conversion Ratio,non_positive_denominator,Healthcare,506,740,0.6837837837837838
+Cash Conversion Ratio,non_positive_denominator,Industrials,263,660,0.3984848484848485
+Cash Conversion Ratio,non_positive_denominator,Real Estate,50,175,0.2857142857142857
+Cash Conversion Ratio,non_positive_denominator,Technology,377,751,0.5019973368841545
+Cash Conversion Ratio,non_positive_denominator,Utilities,17,98,0.17346938775510204
+Cash Conversion Ratio,non_positive_denominator,,8,10,0.8
+Cash Conversion Ratio,source_field_missing,Basic Materials,1,219,0.0045662100456621
+Cash Conversion Ratio,source_field_missing,Communication Services,1,253,0.003952569169960474
+Cash Conversion Ratio,source_field_missing,Consumer Cyclical,1,527,0.0018975332068311196
+Cash Conversion Ratio,source_field_missing,Financial Services,1,707,0.0014144271570014145
+Cash Conversion Ratio,source_field_missing,Healthcare,2,740,0.002702702702702703
+Cash Conversion Ratio,source_field_missing,Utilities,1,98,0.01020408163265306
+Current Ratio,source_field_missing,Energy,1,206,0.0048543689320388345
+Current Ratio,source_field_missing,Financial Services,502,707,0.71004243281471
+Current Ratio,source_field_missing,Healthcare,3,740,0.004054054054054054
+Current Ratio,source_field_missing,Industrials,3,660,0.004545454545454545
+Current Ratio,source_field_missing,Real Estate,21,175,0.12
+Current Ratio,source_field_missing,Technology,2,751,0.002663115845539281
+Debt Ratio,negative_numerator,Financial Services,1,707,0.0014144271570014145
+Debt Ratio,source_field_missing,Basic Materials,2,219,0.0091324200913242
+Debt Ratio,source_field_missing,Communication Services,9,253,0.03557312252964427
+Debt Ratio,source_field_missing,Consumer Cyclical,4,527,0.007590132827324478
+Debt Ratio,source_field_missing,Consumer Defensive,5,230,0.021739130434782608
+Debt Ratio,source_field_missing,Energy,5,206,0.024271844660194174
+Debt Ratio,source_field_missing,Financial Services,42,707,0.0594059405940594
+Debt Ratio,source_field_missing,Healthcare,27,740,0.03648648648648649
+Debt Ratio,source_field_missing,Industrials,12,660,0.01818181818181818
+Debt Ratio,source_field_missing,Real Estate,9,175,0.05142857142857143
+Debt Ratio,source_field_missing,Technology,32,751,0.0426098535286285
+Return on Assets,source_field_missing,Financial Services,1,707,0.0014144271570014145
+Return on Assets,source_field_missing,Industrials,2,660,0.0030303030303030303
+Return on Assets,source_field_missing,Technology,2,751,0.002663115845539281
+Revenue per Employee,source_field_missing,Basic Materials,41,219,0.1872146118721461
+Revenue per Employee,source_field_missing,Communication Services,20,253,0.07905138339920949
+Revenue per Employee,source_field_missing,Consumer Cyclical,22,527,0.04174573055028463
+Revenue per Employee,source_field_missing,Consumer Defensive,21,230,0.09130434782608696
+Revenue per Employee,source_field_missing,Energy,25,206,0.12135922330097088
+Revenue per Employee,source_field_missing,Financial Services,87,707,0.12305516265912306
+Revenue per Employee,source_field_missing,Healthcare,25,740,0.033783783783783786
+Revenue per Employee,source_field_missing,Industrials,42,660,0.06363636363636363
+Revenue per Employee,source_field_missing,Real Estate,27,175,0.15428571428571428
+Revenue per Employee,source_field_missing,Technology,55,751,0.07323568575233022
+Revenue per Employee,source_field_missing,Utilities,6,98,0.061224489795918366
+Revenue per Employee,source_field_missing,,10,10,1.0

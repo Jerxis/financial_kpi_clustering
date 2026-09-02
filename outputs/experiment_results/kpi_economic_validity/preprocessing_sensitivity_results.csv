@@ -1,0 +1,21 @@
+Scenario ID,Scenario Name,Recipe,N Companies Before Completeness,N Companies Retained,Companies Excluded for Completeness,Selected K,Silhouette,ARI vs Canonical,Shared Companies vs Canonical,Shared-Company Coverage
+technology_revenue_25m,Technology companies with revenue >= $25M,Canonical Operating Cash Flow Margin KPI-8,590,587,3,2,0.3906215619200193,1.0,587.0,1.0
+technology_revenue_25m,Technology companies with revenue >= $25M,Economically restricted Cash Conversion Ratio,590,587,3,2,0.5406323097677388,-0.10400690138165988,587.0,1.0
+technology_revenue_25m,Technology companies with revenue >= $25M,Permissive Cash Conversion Ratio,590,587,3,7,0.2853660389282495,0.198090690736911,587.0,1.0
+technology_revenue_25m,Technology companies with revenue >= $25M,Lighter 1st-99th percentile winsorization,590,587,3,2,0.8221092167677765,0.010186797423249122,587.0,1.0
+healthcare_revenue_50m,Healthcare companies with revenue >= $50M,Canonical Operating Cash Flow Margin KPI-8,444,444,0,2,0.47250100499989534,1.0,444.0,1.0
+healthcare_revenue_50m,Healthcare companies with revenue >= $50M,Economically restricted Cash Conversion Ratio,444,441,3,2,0.3763791646160379,0.9160033068612043,441.0,0.9932432432432432
+healthcare_revenue_50m,Healthcare companies with revenue >= $50M,Permissive Cash Conversion Ratio,444,443,1,2,0.34677408148193134,0.9162129244969108,443.0,0.9977477477477478
+healthcare_revenue_50m,Healthcare companies with revenue >= $50M,Lighter 1st-99th percentile winsorization,444,444,0,3,0.4676334388219549,0.7978688035767633,444.0,1.0
+industrials_revenue_20m,Industrials companies with revenue >= $20M,Canonical Operating Cash Flow Margin KPI-8,567,565,2,3,0.5027037840163403,1.0,565.0,1.0
+industrials_revenue_20m,Industrials companies with revenue >= $20M,Economically restricted Cash Conversion Ratio,567,564,3,2,0.43268373668933596,0.5383672415369899,564.0,0.9982300884955753
+industrials_revenue_20m,Industrials companies with revenue >= $20M,Permissive Cash Conversion Ratio,567,565,2,3,0.46287683330806534,0.9549608440384533,565.0,1.0
+industrials_revenue_20m,Industrials companies with revenue >= $20M,Lighter 1st-99th percentile winsorization,567,565,2,2,0.9448535389866317,0.13282165759834802,565.0,1.0
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,Canonical Operating Cash Flow Margin KPI-8,470,470,0,3,0.42797017190429887,1.0,470.0,1.0
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,Economically restricted Cash Conversion Ratio,470,470,0,2,0.4704660454550482,-0.10351766630265272,470.0,1.0
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,Permissive Cash Conversion Ratio,470,470,0,3,0.3065171688596489,0.44354781609245836,470.0,1.0
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,Lighter 1st-99th percentile winsorization,470,470,0,2,0.8386322563791848,0.08322475880946863,470.0,1.0
+non_financial_large_cap_revenue_1b,Non-financial companies with revenue >= $1B,Canonical Operating Cash Flow Margin KPI-8,1654,1651,3,2,0.5759981888852486,1.0,1651.0,1.0
+non_financial_large_cap_revenue_1b,Non-financial companies with revenue >= $1B,Economically restricted Cash Conversion Ratio,1654,1647,7,2,0.5365337034772428,0.9916139835801024,1647.0,0.9975772259236826
+non_financial_large_cap_revenue_1b,Non-financial companies with revenue >= $1B,Permissive Cash Conversion Ratio,1654,1649,5,2,0.5332038294706335,0.9916535763297692,1649.0,0.9987886129618413
+non_financial_large_cap_revenue_1b,Non-financial companies with revenue >= $1B,Lighter 1st-99th percentile winsorization,1654,1651,3,2,0.8986745497596398,0.28013374627613136,1651.0,1.0
