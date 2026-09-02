@@ -1,0 +1,6 @@
+Scenario ID,Scenario Name,Sector Filter,Revenue Minimum,Revenue Maximum,N Companies,Model,K,Silhouette Score,Davies-Bouldin Index,Calinski-Harabasz Score,Inertia,AIC,BIC,Noise Share,Min Cluster Size,Min Samples
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,Consumer Cyclical,20000000,inf,460,K-Means,3,0.2990066860458699,1.3029352878979097,161.4372843569731,2205.425350187658,,,,,
+healthcare_revenue_50m,Healthcare companies with revenue >= $50M,Healthcare,50000000,inf,440,Agglomerative,2,0.45627436037708896,0.8895474560975752,243.06251355569768,,,,,,
+industrials_revenue_20m,Industrials companies with revenue >= $20M,Industrials,20000000,inf,553,Agglomerative,2,0.4443085489819493,1.0249471473852307,143.85574484316348,,,,,,
+non_financial_large_cap_revenue_1b,Non-financial companies with revenue >= $1B,"Technology, Healthcare, Industrials, Consumer Cyclical, Consumer Defensive, Energy, Utilities, Basic Materials, Communication Services, Real Estate",1000000000,inf,1645,K-Means,2,0.5093809169370611,0.8600492749997476,790.1283693687243,12449.40796658615,,,,,
+technology_revenue_20m,Technology companies with revenue >= $20M,Technology,20000000,inf,588,K-Means,3,0.27668963169153193,1.379077549312879,172.0872476290131,3686.6165588082536,,,,,

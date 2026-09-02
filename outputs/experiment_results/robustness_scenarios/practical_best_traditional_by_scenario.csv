@@ -1,0 +1,6 @@
+Scenario ID,Scenario Name,Sector Filter,Revenue Minimum,Revenue Maximum,N Companies,Model,K,Silhouette Score,Davies-Bouldin Index,Calinski-Harabasz Score,Inertia,AIC,BIC,Noise Share,Min Cluster Size,Min Samples
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,Consumer Cyclical,20000000,inf,460,HDBSCAN,2,0.39641314285989787,0.8584694873667803,63.58651068012205,,,,0.13695652173913042,15.0,5.0
+healthcare_revenue_50m,Healthcare companies with revenue >= $50M,Healthcare,50000000,inf,440,HDBSCAN,2,0.6215222341998727,0.4239338562620689,228.26882855595562,,,,0.19772727272727272,10.0,10.0
+industrials_revenue_20m,Industrials companies with revenue >= $20M,Industrials,20000000,inf,553,HDBSCAN,2,0.5429026046370481,0.6081389215820096,131.72634797145963,,,,0.15370705244122965,15.0,5.0
+non_financial_large_cap_revenue_1b,Non-financial companies with revenue >= $1B,"Technology, Healthcare, Industrials, Consumer Cyclical, Consumer Defensive, Energy, Utilities, Basic Materials, Communication Services, Real Estate",1000000000,inf,1645,HDBSCAN,2,0.578039272219399,0.5973196010514114,494.0547622851901,,,,0.09848024316109423,10.0,5.0
+technology_revenue_20m,Technology companies with revenue >= $20M,Technology,20000000,inf,588,HDBSCAN,2,0.3499780680032525,0.7981510214127476,33.20668170963738,,,,0.20578231292517007,10.0,5.0
