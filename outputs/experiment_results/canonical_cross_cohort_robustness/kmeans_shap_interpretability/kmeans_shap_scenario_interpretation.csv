@@ -1,0 +1,13 @@
+Scenario ID,Scenario Name,Cluster,Most Influential KPI,Mean Absolute SHAP,Mean Signed SHAP,Mean Scaled KPI Value,SHAP Background Ranking Spearman,Top KPI Agreement
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,0,Revenue per Employee,26.305561775716697,26.305561775716697,4.0902238039864836,0.9285714285714287,True
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,1,Revenue per Employee,5.662210881313554,5.240208193192455,0.057158146760763515,0.9761904761904763,True
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,2,EBITDA Margin,12.801570424453518,12.801570424453518,-2.43491156244247,1.0,True
+healthcare_revenue_50m,Healthcare companies with revenue >= $50M,0,Free Cash Flow Margin,13.330862868414089,13.330862868414089,-2.648682057943515,0.9761904761904763,True
+healthcare_revenue_50m,Healthcare companies with revenue >= $50M,1,Free Cash Flow Margin,2.505729497843825,1.2820518970344732,0.023687201700620695,0.9761904761904763,True
+industrials_revenue_20m,Industrials companies with revenue >= $20M,0,Revenue per Employee,59.407140319728555,59.407140319728555,5.898884099626016,1.0,True
+industrials_revenue_20m,Industrials companies with revenue >= $20M,1,EBITDA Margin,20.408866037075082,20.408866037075082,-3.0484967224801562,1.0,True
+industrials_revenue_20m,Industrials companies with revenue >= $20M,2,Revenue per Employee,8.46328060369552,7.839130282655809,0.021556337567106662,0.9761904761904763,True
+non_financial_large_cap_revenue_1b,Non-financial companies with revenue >= $1B,0,Revenue per Employee,12.586830153070615,9.132760875432972,0.28049035726825633,1.0,True
+non_financial_large_cap_revenue_1b,Non-financial companies with revenue >= $1B,1,Revenue per Employee,74.31494198322936,74.31494198322936,6.70833526112614,1.0,True
+technology_revenue_25m,Technology companies with revenue >= $25M,0,Free Cash Flow Margin,2.867172527335435,2.1530548934227784,0.17055069041381402,0.9761904761904763,False
+technology_revenue_25m,Technology companies with revenue >= $25M,1,EBITDA Margin,8.63576299433674,8.40281176294182,-1.9129392673612498,0.9523809523809524,True

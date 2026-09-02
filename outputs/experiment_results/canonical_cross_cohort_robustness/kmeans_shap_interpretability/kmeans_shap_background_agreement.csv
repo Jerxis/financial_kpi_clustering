@@ -1,0 +1,13 @@
+Scenario ID,Scenario Name,K,Cluster,SHAP Background Ranking Spearman,Top KPI Background A,Top KPI Background B,Top KPI Agreement
+technology_revenue_25m,Technology companies with revenue >= $25M,2,0,0.9761904761904763,Free Cash Flow Margin,Return on Assets,False
+technology_revenue_25m,Technology companies with revenue >= $25M,2,1,0.9523809523809524,EBITDA Margin,EBITDA Margin,True
+healthcare_revenue_50m,Healthcare companies with revenue >= $50M,2,0,0.9761904761904763,Free Cash Flow Margin,Free Cash Flow Margin,True
+healthcare_revenue_50m,Healthcare companies with revenue >= $50M,2,1,0.9761904761904763,Free Cash Flow Margin,Free Cash Flow Margin,True
+industrials_revenue_20m,Industrials companies with revenue >= $20M,3,0,1.0,Revenue per Employee,Revenue per Employee,True
+industrials_revenue_20m,Industrials companies with revenue >= $20M,3,1,1.0,EBITDA Margin,EBITDA Margin,True
+industrials_revenue_20m,Industrials companies with revenue >= $20M,3,2,0.9761904761904763,Revenue per Employee,Revenue per Employee,True
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,3,0,0.9285714285714287,Revenue per Employee,Revenue per Employee,True
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,3,1,0.9761904761904763,Revenue per Employee,Revenue per Employee,True
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,3,2,1.0,EBITDA Margin,EBITDA Margin,True
+non_financial_large_cap_revenue_1b,Non-financial companies with revenue >= $1B,2,0,1.0,Revenue per Employee,Revenue per Employee,True
+non_financial_large_cap_revenue_1b,Non-financial companies with revenue >= $1B,2,1,1.0,Revenue per Employee,Revenue per Employee,True

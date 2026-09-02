@@ -1,0 +1,3 @@
+Diagnostic,Replicates,Sampling Fraction,Maximum Sample Size,K Range,K-Means Initialisations per K
+Repeated Hopkins statistic,25,0.1,100.0,,
+Selection-matched permutation null,50,,,2-10,10.0

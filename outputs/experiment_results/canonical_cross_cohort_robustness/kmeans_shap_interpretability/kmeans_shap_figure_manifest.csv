@@ -1,0 +1,18 @@
+Scenario ID,Scenario Name,Cluster,Figure Type,Relative Path
+technology_revenue_25m,Technology companies with revenue >= $25M,all,Cluster-specific global SHAP importance,shap_kmeans\01_technology_revenue_25m__global_cluster_importance.png
+technology_revenue_25m,Technology companies with revenue >= $25M,0,Cluster SHAP beeswarm,shap_kmeans\01_technology_revenue_25m__cluster_0__beeswarm.png
+technology_revenue_25m,Technology companies with revenue >= $25M,1,Cluster SHAP beeswarm,shap_kmeans\01_technology_revenue_25m__cluster_1__beeswarm.png
+healthcare_revenue_50m,Healthcare companies with revenue >= $50M,all,Cluster-specific global SHAP importance,shap_kmeans\02_healthcare_revenue_50m__global_cluster_importance.png
+healthcare_revenue_50m,Healthcare companies with revenue >= $50M,0,Cluster SHAP beeswarm,shap_kmeans\02_healthcare_revenue_50m__cluster_0__beeswarm.png
+healthcare_revenue_50m,Healthcare companies with revenue >= $50M,1,Cluster SHAP beeswarm,shap_kmeans\02_healthcare_revenue_50m__cluster_1__beeswarm.png
+industrials_revenue_20m,Industrials companies with revenue >= $20M,all,Cluster-specific global SHAP importance,shap_kmeans\03_industrials_revenue_20m__global_cluster_importance.png
+industrials_revenue_20m,Industrials companies with revenue >= $20M,0,Cluster SHAP beeswarm,shap_kmeans\03_industrials_revenue_20m__cluster_0__beeswarm.png
+industrials_revenue_20m,Industrials companies with revenue >= $20M,1,Cluster SHAP beeswarm,shap_kmeans\03_industrials_revenue_20m__cluster_1__beeswarm.png
+industrials_revenue_20m,Industrials companies with revenue >= $20M,2,Cluster SHAP beeswarm,shap_kmeans\03_industrials_revenue_20m__cluster_2__beeswarm.png
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,all,Cluster-specific global SHAP importance,shap_kmeans\04_consumer_cyclical_revenue_20m__global_cluster_importance.png
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,0,Cluster SHAP beeswarm,shap_kmeans\04_consumer_cyclical_revenue_20m__cluster_0__beeswarm.png
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,1,Cluster SHAP beeswarm,shap_kmeans\04_consumer_cyclical_revenue_20m__cluster_1__beeswarm.png
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,2,Cluster SHAP beeswarm,shap_kmeans\04_consumer_cyclical_revenue_20m__cluster_2__beeswarm.png
+non_financial_large_cap_revenue_1b,Non-financial companies with revenue >= $1B,all,Cluster-specific global SHAP importance,shap_kmeans\05_non_financial_large_cap_revenue_1b__global_cluster_importance.png
+non_financial_large_cap_revenue_1b,Non-financial companies with revenue >= $1B,0,Cluster SHAP beeswarm,shap_kmeans\05_non_financial_large_cap_revenue_1b__cluster_0__beeswarm.png
+non_financial_large_cap_revenue_1b,Non-financial companies with revenue >= $1B,1,Cluster SHAP beeswarm,shap_kmeans\05_non_financial_large_cap_revenue_1b__cluster_1__beeswarm.png

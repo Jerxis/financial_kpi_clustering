@@ -1,0 +1,46 @@
+Scenario ID,Scenario Name,Method,Selection Objective,Modal Configuration,Modal Selection Share,Distinct Configurations Selected,Selection Entropy,Normalised Selection Entropy
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,Agglomerative,Maximum common-space Silhouette,Agglomerative|K=2,0.55,2,0.6881388137135884,0.9927744539878083
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,Full-assignment traditional comparison,Maximum common-space Silhouette,Agglomerative|K=2,0.5,4,1.094056456831614,0.78919491236176
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,Gaussian Mixture,Maximum common-space Silhouette,Gaussian Mixture|K=2,0.8,2,0.5004024235381879,0.7219280948873623
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,Gaussian Mixture,Minimum AIC,Gaussian Mixture|K=10,0.9,2,0.3250829733914482,0.46899559358928117
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,Gaussian Mixture,Minimum BIC,Gaussian Mixture|K=4,0.3,5,1.4786258764929634,0.9187219122089041
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,HDBSCAN,HDBSCAN balanced frontier leader,HDBSCAN|mcs=10|ms=5,0.8,3,0.6128694524619495,0.5578578164321781
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,HDBSCAN,HDBSCAN coverage leader,HDBSCAN|mcs=10|ms=5,0.9,2,0.3250829733914482,0.46899559358928117
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,HDBSCAN,HDBSCAN separation leader,HDBSCAN|mcs=10|ms=10,0.4,3,1.0549201679861442,0.9602297178607612
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,K-Means,Maximum common-space Silhouette,K-Means|K=2,0.7,2,0.6108643020548935,0.8812908992306927
+healthcare_revenue_50m,Healthcare companies with revenue >= $50M,Agglomerative,Maximum common-space Silhouette,Agglomerative|K=2,1.0,1,-0.0,0.0
+healthcare_revenue_50m,Healthcare companies with revenue >= $50M,Full-assignment traditional comparison,Maximum common-space Silhouette,Agglomerative|K=2,0.8,2,0.5004024235381879,0.7219280948873623
+healthcare_revenue_50m,Healthcare companies with revenue >= $50M,Gaussian Mixture,Maximum common-space Silhouette,Gaussian Mixture|K=2,1.0,1,-0.0,0.0
+healthcare_revenue_50m,Healthcare companies with revenue >= $50M,Gaussian Mixture,Minimum AIC,Gaussian Mixture|K=10,0.7,3,0.8018185525433372,0.7298466991620974
+healthcare_revenue_50m,Healthcare companies with revenue >= $50M,Gaussian Mixture,Minimum BIC,Gaussian Mixture|K=5,0.35,5,1.4305622903362423,0.8888583270495175
+healthcare_revenue_50m,Healthcare companies with revenue >= $50M,HDBSCAN,HDBSCAN balanced frontier leader,HDBSCAN|mcs=10|ms=15,0.7,4,0.9142855814670989,0.659517637169433
+healthcare_revenue_50m,Healthcare companies with revenue >= $50M,HDBSCAN,HDBSCAN coverage leader,HDBSCAN|mcs=10|ms=5,0.55,3,0.9972715231823841,0.9077556599985014
+healthcare_revenue_50m,Healthcare companies with revenue >= $50M,HDBSCAN,HDBSCAN separation leader,HDBSCAN|mcs=10|ms=15,0.45,4,1.161120818283116,0.8375716232049935
+healthcare_revenue_50m,Healthcare companies with revenue >= $50M,K-Means,Maximum common-space Silhouette,K-Means|K=2,1.0,1,-0.0,0.0
+industrials_revenue_20m,Industrials companies with revenue >= $20M,Agglomerative,Maximum common-space Silhouette,Agglomerative|K=2,0.5,2,0.6931471805599453,1.0
+industrials_revenue_20m,Industrials companies with revenue >= $20M,Full-assignment traditional comparison,Maximum common-space Silhouette,K-Means|K=3,0.35,4,1.3350851650920204,0.9630603734213404
+industrials_revenue_20m,Industrials companies with revenue >= $20M,Gaussian Mixture,Maximum common-space Silhouette,Gaussian Mixture|K=2,0.95,2,0.1985152433458726,0.2863969571159562
+industrials_revenue_20m,Industrials companies with revenue >= $20M,Gaussian Mixture,Minimum AIC,Gaussian Mixture|K=10,0.85,3,0.5181862130502128,0.4716734178155153
+industrials_revenue_20m,Industrials companies with revenue >= $20M,Gaussian Mixture,Minimum BIC,Gaussian Mixture|K=4,0.5,4,1.094056456831614,0.78919491236176
+industrials_revenue_20m,Industrials companies with revenue >= $20M,HDBSCAN,HDBSCAN balanced frontier leader,HDBSCAN|mcs=10|ms=5,0.9,3,0.39439769144744274,0.3589962496465303
+industrials_revenue_20m,Industrials companies with revenue >= $20M,HDBSCAN,HDBSCAN coverage leader,HDBSCAN|mcs=10|ms=5,0.75,4,0.7999027794271169,0.5770078865363999
+industrials_revenue_20m,Industrials companies with revenue >= $20M,HDBSCAN,HDBSCAN separation leader,HDBSCAN|mcs=10|ms=10,0.45,3,1.0104127537805414,0.9197173235750931
+industrials_revenue_20m,Industrials companies with revenue >= $20M,K-Means,Maximum common-space Silhouette,K-Means|K=3,0.65,2,0.6474466390346325,0.9340680553754911
+non_financial_large_cap_revenue_1b,Non-financial companies with revenue >= $1B,Agglomerative,Maximum common-space Silhouette,Agglomerative|K=2,1.0,1,-0.0,0.0
+non_financial_large_cap_revenue_1b,Non-financial companies with revenue >= $1B,Full-assignment traditional comparison,Maximum common-space Silhouette,Agglomerative|K=2,0.7,2,0.6108643020548935,0.8812908992306927
+non_financial_large_cap_revenue_1b,Non-financial companies with revenue >= $1B,Gaussian Mixture,Maximum common-space Silhouette,Gaussian Mixture|K=2,1.0,1,-0.0,0.0
+non_financial_large_cap_revenue_1b,Non-financial companies with revenue >= $1B,Gaussian Mixture,Minimum AIC,Gaussian Mixture|K=10,0.75,3,0.7305880613711224,0.6650099119652508
+non_financial_large_cap_revenue_1b,Non-financial companies with revenue >= $1B,Gaussian Mixture,Minimum BIC,Gaussian Mixture|K=7,0.5,4,1.094056456831614,0.78919491236176
+non_financial_large_cap_revenue_1b,Non-financial companies with revenue >= $1B,HDBSCAN,HDBSCAN balanced frontier leader,HDBSCAN|mcs=10|ms=10,0.45,3,0.9489154358953991,0.8637400525036962
+non_financial_large_cap_revenue_1b,Non-financial companies with revenue >= $1B,HDBSCAN,HDBSCAN coverage leader,HDBSCAN|mcs=10|ms=10,0.4,4,1.1673871969099057,0.8420918598895943
+non_financial_large_cap_revenue_1b,Non-financial companies with revenue >= $1B,HDBSCAN,HDBSCAN separation leader,HDBSCAN|mcs=10|ms=15,0.3,4,1.3535252706084164,0.9763620978123273
+non_financial_large_cap_revenue_1b,Non-financial companies with revenue >= $1B,K-Means,Maximum common-space Silhouette,K-Means|K=2,1.0,1,-0.0,0.0
+technology_revenue_25m,Technology companies with revenue >= $25M,Agglomerative,Maximum common-space Silhouette,Agglomerative|K=2,0.55,2,0.6881388137135884,0.9927744539878083
+technology_revenue_25m,Technology companies with revenue >= $25M,Full-assignment traditional comparison,Maximum common-space Silhouette,Agglomerative|K=2,0.35,4,1.3040114826148388,0.9406454496153464
+technology_revenue_25m,Technology companies with revenue >= $25M,Gaussian Mixture,Maximum common-space Silhouette,Gaussian Mixture|K=2,1.0,1,-0.0,0.0
+technology_revenue_25m,Technology companies with revenue >= $25M,Gaussian Mixture,Minimum AIC,Gaussian Mixture|K=10,0.8,3,0.6128694524619495,0.5578578164321781
+technology_revenue_25m,Technology companies with revenue >= $25M,Gaussian Mixture,Minimum BIC,Gaussian Mixture|K=5,0.45,5,1.327362863420189,0.8247369178800421
+technology_revenue_25m,Technology companies with revenue >= $25M,HDBSCAN,HDBSCAN balanced frontier leader,HDBSCAN|mcs=10|ms=5,0.8,3,0.6128694524619495,0.5578578164321781
+technology_revenue_25m,Technology companies with revenue >= $25M,HDBSCAN,HDBSCAN coverage leader,HDBSCAN|mcs=10|ms=5,0.7,3,0.7460326647147848,0.6790681957683443
+technology_revenue_25m,Technology companies with revenue >= $25M,HDBSCAN,HDBSCAN separation leader,HDBSCAN|mcs=10|ms=5,0.55,3,0.926506603289533,0.8433426540429225
+technology_revenue_25m,Technology companies with revenue >= $25M,K-Means,Maximum common-space Silhouette,K-Means|K=2,0.6,2,0.6730116670092565,0.9709505944546688

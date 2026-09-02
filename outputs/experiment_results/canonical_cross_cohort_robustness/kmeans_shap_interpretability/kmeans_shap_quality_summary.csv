@@ -1,0 +1,6 @@
+Scenario ID,Scenario Name,K,N Companies,N Explained Companies,Assignment Consistency,Maximum SHAP Additivity Error Background A,Maximum SHAP Additivity Error Background B,Median Background Ranking Spearman,Minimum Background Ranking Spearman,Top KPI Agreement Share,SHAP Version,Explained Output
+technology_revenue_25m,Technology companies with revenue >= $25M,2,587,200,1.0,4.263256414560601e-14,4.973799150320701e-14,0.9642857142857144,0.9523809523809524,0.5,0.52.0,Nearest-rival squared-distance margin
+healthcare_revenue_50m,Healthcare companies with revenue >= $50M,2,444,200,1.0,5.684341886080802e-14,4.973799150320701e-14,0.9761904761904763,0.9761904761904763,1.0,0.52.0,Nearest-rival squared-distance margin
+industrials_revenue_20m,Industrials companies with revenue >= $20M,3,565,200,1.0,1.7053025658242404e-13,1.7053025658242404e-13,1.0,0.9761904761904763,1.0,0.52.0,Nearest-rival squared-distance margin
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,3,470,200,1.0,9.947598300641403e-14,6.394884621840902e-14,0.9761904761904763,0.9285714285714287,1.0,0.52.0,Nearest-rival squared-distance margin
+non_financial_large_cap_revenue_1b,Non-financial companies with revenue >= $1B,2,1651,200,1.0,1.5631940186722204e-13,1.2079226507921703e-13,1.0,1.0,1.0,0.52.0,Nearest-rival squared-distance margin

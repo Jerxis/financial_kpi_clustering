@@ -1,0 +1,8 @@
+Scenario ID,Scenario Name,Selected K,Null Selection Count,Null Selection Share
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,2,50,1.0
+healthcare_revenue_50m,Healthcare companies with revenue >= $50M,2,12,0.24
+healthcare_revenue_50m,Healthcare companies with revenue >= $50M,3,3,0.06
+healthcare_revenue_50m,Healthcare companies with revenue >= $50M,4,35,0.7
+industrials_revenue_20m,Industrials companies with revenue >= $20M,2,50,1.0
+non_financial_large_cap_revenue_1b,Non-financial companies with revenue >= $1B,2,50,1.0
+technology_revenue_25m,Technology companies with revenue >= $25M,2,50,1.0

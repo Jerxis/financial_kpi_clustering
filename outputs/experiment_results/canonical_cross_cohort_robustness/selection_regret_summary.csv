@@ -1,0 +1,16 @@
+Scenario ID,Scenario Name,Method,Selection Objective,Full-Sample Configuration ID,Mean_Selection_Regret,Median_Selection_Regret,Max_Selection_Regret,Mean_Winner_Runner_Up_Margin
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,Agglomerative,Maximum common-space Silhouette,Agglomerative|K=3,0.02313306309439639,0.014771942970170565,0.08005120416998196,0.033183874693673496
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,Gaussian Mixture,Maximum common-space Silhouette,Gaussian Mixture|K=2,0.005841779513181039,0.0,0.05458692407197682,0.05864692792936847
+consumer_cyclical_revenue_20m,Consumer Cyclical companies with revenue >= $20M,K-Means,Maximum common-space Silhouette,K-Means|K=3,0.011428259777557497,0.005658822833917693,0.03234016082765756,0.020557308167922346
+healthcare_revenue_50m,Healthcare companies with revenue >= $50M,Agglomerative,Maximum common-space Silhouette,Agglomerative|K=2,0.0,0.0,0.0,0.13117173778119193
+healthcare_revenue_50m,Healthcare companies with revenue >= $50M,Gaussian Mixture,Maximum common-space Silhouette,Gaussian Mixture|K=2,0.0,0.0,0.0,0.11387559522469506
+healthcare_revenue_50m,Healthcare companies with revenue >= $50M,K-Means,Maximum common-space Silhouette,K-Means|K=2,0.0,0.0,0.0,0.0960843795961365
+industrials_revenue_20m,Industrials companies with revenue >= $20M,Agglomerative,Maximum common-space Silhouette,Agglomerative|K=3,0.014400682310700666,0.005863108282091634,0.06473927745883323,0.02996861119101867
+industrials_revenue_20m,Industrials companies with revenue >= $20M,Gaussian Mixture,Maximum common-space Silhouette,Gaussian Mixture|K=2,2.4712162334805666e-05,0.0,0.0004942432466961133,0.04819502077772268
+industrials_revenue_20m,Industrials companies with revenue >= $20M,K-Means,Maximum common-space Silhouette,K-Means|K=3,0.011914224736669077,0.0,0.07920401320637238,0.030672319023430778
+non_financial_large_cap_revenue_1b,Non-financial companies with revenue >= $1B,Agglomerative,Maximum common-space Silhouette,Agglomerative|K=2,0.0,0.0,0.0,0.362130228877084
+non_financial_large_cap_revenue_1b,Non-financial companies with revenue >= $1B,Gaussian Mixture,Maximum common-space Silhouette,Gaussian Mixture|K=2,0.0,0.0,0.0,0.09763504414984876
+non_financial_large_cap_revenue_1b,Non-financial companies with revenue >= $1B,K-Means,Maximum common-space Silhouette,K-Means|K=2,0.0,0.0,0.0,0.34255179688419785
+technology_revenue_25m,Technology companies with revenue >= $25M,Agglomerative,Maximum common-space Silhouette,Agglomerative|K=2,0.013354993227060682,0.0,0.04783165775912218,0.035869745223504355
+technology_revenue_25m,Technology companies with revenue >= $25M,Gaussian Mixture,Maximum common-space Silhouette,Gaussian Mixture|K=2,0.0,0.0,0.0,0.09289918354329592
+technology_revenue_25m,Technology companies with revenue >= $25M,K-Means,Maximum common-space Silhouette,K-Means|K=2,0.005715953165402276,0.0,0.04152978949901659,0.029197440867899542
