@@ -178,3 +178,195 @@ def calculate_kpis(
         )
 
     return kpi_results
+
+
+def diagnose_kpi_economic_validity(
+    data: pd.DataFrame,
+    minimum_positive_net_income_margin: float = 0.01,
+) -> pd.DataFrame:
+    """Return one audit row per economically invalid KPI observation.
+
+    These rules do not claim that extreme financial performance is an error.
+    They only identify observations for which a ratio is mathematically unsafe
+    or loses its usual economic interpretation because a required denominator
+    or input is missing, non-positive, or immaterial relative to revenue.
+
+    Cash Conversion Ratio receives the only materiality rule: net income must
+    be positive and at least ``minimum_positive_net_income_margin`` of revenue.
+    The threshold is therefore explicit and can be varied in sensitivity tests.
+    """
+
+    identity_columns = ["Symbol", "Company Name", "Sector"]
+    required_identity_columns = [
+        column for column in identity_columns if column not in data.columns
+    ]
+    if required_identity_columns:
+        raise ValueError(
+            "Missing identity columns for KPI validity audit: "
+            f"{required_identity_columns}"
+        )
+
+    rule_specs = [
+        {
+            "kpis": [
+                "EBITDA Margin",
+                "Free Cash Flow Margin",
+                "Operating Cash Flow Margin",
+            ],
+            "field": "Total Revenue",
+            "reason": "non_positive_denominator",
+            "description": "Total Revenue must be greater than zero.",
+            "invalid": lambda values, frame: values <= 0,
+        },
+        {
+            "kpis": ["Return on Assets", "Asset Turnover", "Debt Ratio"],
+            "field": "Total Assets",
+            "reason": "non_positive_denominator",
+            "description": "Total Assets must be greater than zero.",
+            "invalid": lambda values, frame: values <= 0,
+        },
+        {
+            "kpis": ["Revenue per Employee"],
+            "field": "Employees",
+            "reason": "non_positive_denominator",
+            "description": "Employee count must be greater than zero.",
+            "invalid": lambda values, frame: values <= 0,
+        },
+        {
+            "kpis": ["Current Ratio"],
+            "field": "Current Liabilities",
+            "reason": "non_positive_denominator",
+            "description": "Current Liabilities must be greater than zero.",
+            "invalid": lambda values, frame: values <= 0,
+        },
+        {
+            "kpis": ["Debt Ratio"],
+            "field": "Total Debt",
+            "reason": "negative_numerator",
+            "description": "Total Debt must not be negative.",
+            "invalid": lambda values, frame: values < 0,
+        },
+        {
+            "kpis": ["Cash Conversion Ratio"],
+            "field": "Net Income",
+            "reason": "non_positive_denominator",
+            "description": (
+                "Cash Conversion Ratio is not given its usual interpretation "
+                "when Net Income is zero or negative."
+            ),
+            "invalid": lambda values, frame: values <= 0,
+        },
+        {
+            "kpis": ["Cash Conversion Ratio"],
+            "field": "Net Income",
+            "reason": "immaterial_positive_denominator",
+            "description": (
+                "Positive Net Income must be material relative to revenue."
+            ),
+            "invalid": lambda values, frame: (
+                (values > 0)
+                & frame["Total Revenue"].gt(0)
+                & (
+                    values / frame["Total Revenue"]
+                    < minimum_positive_net_income_margin
+                )
+            ),
+        },
+    ]
+
+    required_fields = sorted(
+        {spec["field"] for spec in rule_specs} | {"Total Revenue"}
+    )
+    missing_fields = [
+        field for field in required_fields if field not in data.columns
+    ]
+    if missing_fields:
+        raise ValueError(
+            "Missing financial fields for KPI validity audit: "
+            f"{missing_fields}"
+        )
+
+    audit_records = []
+    audited_field_kpis = set()
+
+    for spec in rule_specs:
+        field = spec["field"]
+        field_values = data[field]
+
+        for kpi in spec["kpis"]:
+            field_kpi_key = (field, kpi)
+            if field_kpi_key not in audited_field_kpis:
+                missing_mask = field_values.isna()
+                for row_index in data.index[missing_mask]:
+                    audit_records.append({
+                        **data.loc[row_index, identity_columns].to_dict(),
+                        "KPI": kpi,
+                        "Reason": "source_field_missing",
+                        "Rule Description": f"{field} is required.",
+                        "Rule Field": field,
+                        "Observed Value": np.nan,
+                        "Reference Value": np.nan,
+                        "Materiality Threshold": np.nan,
+                    })
+                audited_field_kpis.add(field_kpi_key)
+
+            invalid_mask = (
+                field_values.notna()
+                & spec["invalid"](field_values, data)
+            )
+            for row_index in data.index[invalid_mask]:
+                audit_records.append({
+                    **data.loc[row_index, identity_columns].to_dict(),
+                    "KPI": kpi,
+                    "Reason": spec["reason"],
+                    "Rule Description": spec["description"],
+                    "Rule Field": field,
+                    "Observed Value": field_values.loc[row_index],
+                    "Reference Value": (
+                        data.loc[row_index, "Total Revenue"]
+                        if kpi == "Cash Conversion Ratio"
+                        else np.nan
+                    ),
+                    "Materiality Threshold": (
+                        minimum_positive_net_income_margin
+                        if spec["reason"]
+                        == "immaterial_positive_denominator"
+                        else np.nan
+                    ),
+                })
+
+    audit_columns = [
+        *identity_columns,
+        "KPI",
+        "Reason",
+        "Rule Description",
+        "Rule Field",
+        "Observed Value",
+        "Reference Value",
+        "Materiality Threshold",
+    ]
+    return pd.DataFrame(audit_records, columns=audit_columns)
+
+
+def apply_kpi_economic_validity_mask(
+    kpi_data: pd.DataFrame,
+    validity_audit: pd.DataFrame,
+) -> pd.DataFrame:
+    """Set audited invalid KPI observations to missing, preserving provenance."""
+
+    if kpi_data["Symbol"].duplicated().any():
+        raise ValueError("KPI validity masking requires one row per Symbol.")
+
+    masked_data = kpi_data.copy()
+    symbol_to_index = pd.Series(masked_data.index, index=masked_data["Symbol"])
+
+    invalid_pairs = validity_audit[["Symbol", "KPI"]].drop_duplicates()
+    unknown_kpis = sorted(set(invalid_pairs["KPI"]) - set(masked_data.columns))
+    if unknown_kpis:
+        raise ValueError(f"Validity audit contains unknown KPIs: {unknown_kpis}")
+
+    for kpi, invalid_symbols in invalid_pairs.groupby("KPI")["Symbol"]:
+        matching_symbols = invalid_symbols[invalid_symbols.isin(symbol_to_index.index)]
+        masked_data.loc[symbol_to_index.loc[matching_symbols], kpi] = np.nan
+
+    return masked_data
